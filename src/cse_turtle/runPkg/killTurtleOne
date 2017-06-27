@@ -1,0 +1,10 @@
+#! /usr/bin/env python
+
+import rospy
+from turtpkg.turtle import Turtle
+from turtlesim.msg import Pose
+
+rospy.init_node('turtle1Kill')
+rospy.wait_for_message('/turtle1/pose/', Pose)
+cseTurtle = Turtle('turtle1')
+cseTurtle.kill()

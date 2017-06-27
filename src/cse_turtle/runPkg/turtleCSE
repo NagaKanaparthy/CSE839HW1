@@ -1,0 +1,56 @@
+#! /usr/bin/env python
+
+import rospy
+import sys
+from turtpkg.turtle import Turtle
+
+val = sys.argv[1].upper()
+rospy.init_node('cse_node')
+
+if(val == 'C'):
+    cTurtle = Turtle('c_turtle')
+    cTurtle.spawn(3,5,0)
+    cTurtle.prepareForMovement()
+    cTurtle.move(-2)
+    cTurtle.rotate(90)
+    cTurtle.move(2)
+    cTurtle.rotate(-90)
+    cTurtle.move(2)
+    print 'C you soon'
+
+elif(val == 'S'):
+    sTurtle = Turtle('s_turtle')
+    sTurtle.spawn(6,5,0)
+    sTurtle.prepareForMovement()
+    sTurtle.move(-2)
+    sTurtle.move(2)
+    sTurtle.rotate(90)
+    sTurtle.move(1)
+    sTurtle.rotate(90)
+    sTurtle.move(1)
+    sTurtle.move(1)
+    sTurtle.rotate(-90)
+    sTurtle.move(1)
+    sTurtle.rotate(-90)
+    sTurtle.move(2)
+    print 'Sold'
+
+elif(val == 'E'):
+    eTurtle = Turtle('e_turtle')
+    eTurtle.spawn(8,7,0)
+    eTurtle.prepareForMovement()
+    eTurtle.move(2)
+    eTurtle.move(-2)
+    eTurtle.rotate(-90)
+    eTurtle.move(1)
+    eTurtle.rotate(90)
+    eTurtle.move(1.5)
+    eTurtle.move(-1.5)
+    eTurtle.rotate(-90)
+    eTurtle.move(1)
+    eTurtle.rotate(90)
+    eTurtle.move(2)
+    print 'Ez'
+
+else:
+    print 'invalid args'

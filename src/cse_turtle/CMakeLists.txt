@@ -158,6 +158,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 catkin_python_setup()
-catkin_install_python(PROGRAMS bin/singleCSE bin/turtleCSE 
-  bin/multiTurtle bin/killTurtleOne
+catkin_install_python(PROGRAMS runPkg/singleCSE runPkg/turtleCSE 
+  runPkg/multiTurtle runPkg/killTurtleOne
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
