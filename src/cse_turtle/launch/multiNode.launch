@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+    <node pkg="cse_turtle" name="runK" type="killTurtleOne"/>
+    <node pkg="cse_turtle" name="runC" type="turtleCSE" args="c"/>
+    <node pkg="cse_turtle" name="runS" type="turtleCSE" args="s"/>
+    <node pkg="cse_turtle" name="runE" type="turtleCSE" args="e"/>
+</launch>

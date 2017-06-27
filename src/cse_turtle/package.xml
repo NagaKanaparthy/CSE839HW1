@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>cse_turtle</name>
+  <version>0.1.0</version>
+  <description>The cse_turtle package</description>
+
+  <maintainer email="nkanaparthyper@live.com">Nagavarun Kanaparthy</maintainer>
+  <author email="nkanaparthyper@live.com">Nagavarun Kanaparthy</author>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>

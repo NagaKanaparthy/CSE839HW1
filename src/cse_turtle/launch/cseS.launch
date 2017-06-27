@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+    <node pkg="cse_turtle" name="run" type="singleCSE"/>
+</launch>
